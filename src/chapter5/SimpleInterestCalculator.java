@@ -9,7 +9,7 @@ import java.util.Scanner;
 * 1.9% for 50k and above
 * Build a calculator that will calculate the simple interest
 * */
-public class LoanCalculator {
+public class SimpleInterestCalculator {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] arg){
         double principal  = getPrincipalAmount();
@@ -36,7 +36,7 @@ public class LoanCalculator {
         return principal * rate * time;
     }
 
-    // Determine interest rate
+    // Determine the interest rate
     public static double determineInterestRate(double principal) {
         double interestRate;
         if(principal < 20000) {
@@ -58,6 +58,6 @@ public class LoanCalculator {
         System.out.println("Duration: " + d + "year(s)");
         System.out.println("Rate: " + r + "%");
         System.out.println("Simple Interest: " + si);
-        System.out.println("Pay back amount: " + a);
+        System.out.println("Total Payback Amount: " + a);
     }
 }
